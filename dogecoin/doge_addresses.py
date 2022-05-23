@@ -27,17 +27,21 @@ def main():
         with open('./doge_addresses_list.txt', 'a') as f:
             
             for transaction in transactions_list:
-                v_outs = transaction['vout']
-                for v_out in v_outs:
-                    type_check = v_out['scriptPubKey']['type']
-                    if (type_check == 'nulldata') or (type_check == 'nonstandard'):
-                        print("INVALID transaction!")
-                        continue
-                    addresses = v_out['scriptPubKey']['addresses']
-                    if addresses:
-                        for address in addresses:
-                            f.write(str(address))
-                            f.write('\n')
+                if transaction != None:
+                    v_outs = transaction['vout']
+                    for v_out in v_outs:
+                        type_check = v_out['scriptPubKey']['type']
+                        if (type_check == 'nulldata') or (type_check == 'nonstandard'):
+                            print("INVALID transaction!")
+                            continue
+                        addresses = v_out['scriptPubKey']['addresses']
+                        if addresses:
+                            for address in addresses:
+                                f.write(str(address))
+                                f.write('\n')
 
         # Keep on iterating
         start_block += 1 
+
+if __name__ == "__main__":
+    main()
