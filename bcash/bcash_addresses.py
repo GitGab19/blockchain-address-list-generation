@@ -7,7 +7,7 @@ conn = http.client.HTTPSConnection("api-eu1.tatum.io")
 def main():
     start_block = 0
     initial_block = start_block
-    end_block = 4236364
+    end_block = 741389
     counter = 0
     apiKey = "INSERT YOUR TATUM API KEY HERE"
     headers = { 'x-api-key': str(apiKey) }
