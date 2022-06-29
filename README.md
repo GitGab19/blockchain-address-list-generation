@@ -11,6 +11,6 @@ Repo is divided into different blockchains we've studied; more specifically, blo
 - Zcash
 - Bitcoin Cash
 
-Every sub-directory contains a README that explains how the specific python script works.
+Every sub-directory contains a README that explains how the specific Python script works.
 
 Feel free to open issues, or to contribute to the project!
