@@ -10,7 +10,7 @@ for x in range(start_block,end_block):
         fp.write(str(x)+'\n')
     percentage = (x/(end_block))*100
     print("block number "+str(x)+" --> "+str(percentage)+"%")
-    with open('./dash_addresses.txt', 'a') as f:
+    with open('./dash_addresses_list.txt', 'a') as f:
         block_hash = subprocess.run(["../dash/dashcore-0.17.0/bin/dash-cli", "getblockhash", str(x)], capture_output=True)
         block_hash_string = block_hash.stdout.decode('utf-8')
         block = subprocess.run(["../dash/dashcore-0.17.0/bin/dash-cli", "getblock", str(block_hash_string), "2"], capture_output=True)
