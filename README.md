@@ -1,4 +1,4 @@
-# Blockchain Address List Generation
+# Blockchains Address List Generation
 The focus of this repo is to retrieve the full list of addresses ever appeared into any transactions of blockchains using secp256k1 curve. 
 These python scripts have been used for an academic research at Politecnico di Torino.
 
