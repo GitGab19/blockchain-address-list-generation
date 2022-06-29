@@ -2,10 +2,13 @@ import subprocess
 from sys import stdout
 import json
 
-for x in range(0,1677816):
+start_block = 0
+end_block = 1677816
+
+for x in range(start_block,end_block):
     with open('./zcash_counter.txt', 'w') as fp:
         fp.write(str(x)+'\n')
-    percentage = (x/(1677816))*100
+    percentage = (x/(end_block))*100
     print("block number "+str(x)+" --> "+str(percentage)+"%")
     with open('./zcash_addresses.txt', 'a') as f:
         block = subprocess.run(["../zcash/src/zcash-cli", "getblock", str(x), "2"], capture_output=True)

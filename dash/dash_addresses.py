@@ -2,10 +2,13 @@ import subprocess
 from sys import stdout
 import json
 
-for x in range(0,1675747):
+start_block = 0
+end_block = 1675747
+
+for x in range(start_block,end_block):
     with open('./dash_counter.txt', 'w') as fp:
         fp.write(str(x)+'\n')
-    percentage = (x/(1675747))*100
+    percentage = (x/(end_block))*100
     print("block number "+str(x)+" --> "+str(percentage)+"%")
     with open('./dash_addresses.txt', 'a') as f:
         block_hash = subprocess.run(["../dash/dashcore-0.17.0/bin/dash-cli", "getblockhash", str(x)], capture_output=True)
