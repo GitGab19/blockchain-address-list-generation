@@ -1,10 +1,12 @@
 # This script computes the Bitcoin compressed addresses  for our starting set and checks if they ever appeared on
 # the blockchain. The whole list of existing addresses must be loaded in advance on a SQL database
 
-import AddressGeneration
 import datetime
 import bitcoin
 import mysql.connector
+import sys
+sys.path.append('../')
+import AddressGeneration
 
 bitcoin.SelectParams('mainnet')
 

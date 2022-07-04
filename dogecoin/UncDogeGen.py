@@ -1,23 +1,26 @@
+# This script computes the Dogecoin uncompressed addresses for our starting set and checks if they ever appeared on
+# the blockchain. The whole list of existing addresses must be loaded in advance on a SQL database
+
 import datetime
 import bitcoin
 import mysql.connector
 import sys
 sys.path.append('../')
-sys.path.append('/Users/antonio/AppData/Local/Programs/Python/Python39/Lib/site-packages')
-# sys.path.append('/Users/antonio/AppData/Local/Programs/Python/Python39/Lib/site-packages')
 import AddressGeneration
 
 
 t0 = datetime.datetime.now()
 
+# Luck.txt is the file where the private keys corresponding to existing addresses get saved
 with open("Luck.txt", "a") as f:
     print(t0, file=f)
 
+# Link with the database
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
     password="",
-    database="dogecoin"
+    database="dogecoin" # database name
 )
 
 # Parameters
@@ -25,13 +28,13 @@ mydb = mysql.connector.connect(
 u = 0
 env = 0
 
-file_name = '../cosetSecp256k1Keys.txt'
+# Name of the file with the 144M keys of our subsets
+file_name = 'secp256k1Keys.txt' 
 
 fh = open(file_name, 'rt')
 line0 = fh.readline()
 line = fh.readline()
 
-#SELECT * FROM address_eth WHERE address='0xB410674D5BB2C7a3c28eeb8a4013D1533A42BC10';
 
 while line:
     chunks = line.split('\t')

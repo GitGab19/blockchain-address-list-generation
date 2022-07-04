@@ -1,3 +1,6 @@
+# This script computes the Bitcoin Cash uncompressed addresses  for our starting set and checks if they ever appeared on
+# the blockchain. The whole list of existing addresses must be loaded in advance on a SQL database
+
 import datetime
 import bitcoin
 import mysql.connector
