@@ -1,6 +1,8 @@
 import datetime
 import bitcoin
 import mysql.connector
+import sys
+sys.path.append('../')
 import AddressGeneration
 
 

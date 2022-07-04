@@ -56,7 +56,7 @@ def CosetPrivateKeyComputation(p1: int, p2: int, p3: int, base: int, n: int):
 # Copy the private keys + corresponding public keys of the subgroup in a .txt file
 # The file will have around 18M rows
 def KeysFile(n: int, privateSet):
-    f = open("secp256k1Keys.txt", "r+")
+    f = open("secp256k1_keys.txt", "r+")
     f.seek(0)
     f.write('\t\tPrivateKey  \t\t\t\t\t\t\t\t\t\t  PublicKey-x \t\t\t\t\t\t\t\t\t\t   PublicKey-y  \n')
 
@@ -73,7 +73,7 @@ def KeysFile(n: int, privateSet):
 # Copy all the private keys + corresponding public keys (subgroup + seven cosets) in a .txt file
 # The file will be around 144M rows
 def CosetKeysFile(n: int, privateSet):
-    f = open("secp256k1Keys.txt", "r+")
+    f = open("secp256k1_keys.txt", "r+")
     f.seek(0)
     f.write('\t\tPrivateKey  \t\t\t\t\t\t\t\t\t\t  PublicKey-x \t\t\t\t\t\t\t\t\t\t   PublicKey-y  \n')
 

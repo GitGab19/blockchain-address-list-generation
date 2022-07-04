@@ -1,6 +1,8 @@
 import datetime
 import bitcoin
 import mysql.connector
+import sys
+sys.path.append('../')
 import AddressGeneration
 
 
@@ -27,7 +29,6 @@ fh = open(file_name, 'rt')
 line0 = fh.readline()
 line = fh.readline()
 
-#SELECT * FROM address_eth WHERE address='0xB410674D5BB2C7a3c28eeb8a4013D1533A42BC10';
 
 while line:
     chunks = line.split('\t')
