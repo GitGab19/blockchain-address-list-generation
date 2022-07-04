@@ -1,0 +1,5 @@
+This file must contain the private/public key pairs, respecting the following format: 
+
+PRIVATE KEY \t\t\t PUBLIC KEY(x coordinate) \t\t\t PUBLIC KEY(y coordinate)
+
+... \t\t\t ... \t\t\t ...
