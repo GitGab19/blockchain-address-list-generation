@@ -12,5 +12,7 @@ Repo is divided into different blockchains we've studied; more specifically, blo
 - Bitcoin Cash
 
 Every sub-directory contains a README that explains how the specific Python script works.
-
+<br><br>
+In order to create the whole list of private and public keys for the subgroup + its seven cosets, run the KeysFileGeneration.py script. 
+<br><br>
 Feel free to open issues, or to contribute to the project!
