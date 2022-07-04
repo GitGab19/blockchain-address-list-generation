@@ -1,5 +1,5 @@
 # Bitcoin Cash
-This folder contains the scripts needed to generate and check the presence of the generated address (starting from the private/public key sets) in the list of addresses exctracted from the Bitcoin Cash blockchain.
+This folder contains the scripts needed to generate and check the presence of the generated address (starting from the private/public key sets) in the list of addresses extracted from the Bitcoin Cash blockchain.
 <br>
 - In order to generate the *compressed* addresses, run the *CompBcashGen.py* script
 - In order to generate the *uncompressed* addresses, run the *UncBcashGen.py* script
