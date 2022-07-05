@@ -51,12 +51,13 @@ while line:
     myresult = mycursor.fetchone()
 
     if myresult:
-        cuerpo = 'Private key= {pkwif}  \r\n Address = {address} \r\n -----------------------'
-        Message = cuerpo.format(pkwif=private_key, address=pub)
+        body = 'Private key= {pkwif}  \r\n Address = {address} \r\n -----------------------'
+        Message = body.format(pkwif=private_key, address=pub)
         with open("Luck.txt", "a") as f:
             print(Message, file=f)
     u = u + 1
     line = fh.readline()
+    
 fh.close()
 print(u)
 with open("Luck.txt", "a") as f:
