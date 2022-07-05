@@ -2,7 +2,7 @@
 This folder contains the scripts needed to generate and check the presence of the generated address (starting from the private/public key sets) in the list of addresses exctracted from the Zcash blockchain.
 <br>
 - In order to generate the *compressed* addresses, run the *CompZcashGen.py* script
-- In order to generate the *compressed* addresses, run the *UncZcashGen.py* script
+- In order to generate the *uncompressed* addresses, run the *UncZcashGen.py* script
 <br><br>
 
 **BEWARE**<br>
