@@ -44,6 +44,7 @@ while line:
 
     pub = AddressGeneration.DashAddressComputation(public_key[0])
     mycursor = mydb.cursor()
+    # search in the database: SELECT * FROM tableName WHERE attributeName =
     sql = "SELECT * FROM address_dash WHERE address='" + pub + "';"
 
     mycursor.execute(sql)
