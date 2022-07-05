@@ -1,4 +1,4 @@
-# Bitcoin
+# Bitcoin <img align="center" src="https://user-images.githubusercontent.com/62447440/177342647-6a567716-55f6-477b-aac8-6ea6c9917ca1.png" width="40" height="40">
 This folder contains the scripts needed to generate and check the presence of the generated address (starting from the private/public key sets) in the list of addresses exctracted from the Bitcoin blockchain.
 <br>
 - In order to generate the *compressed* addresses, run the *CompBitcoinGen.py* script
