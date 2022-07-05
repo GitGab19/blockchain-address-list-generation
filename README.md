@@ -15,7 +15,15 @@ Repo is divided into different blockchains we've studied; more specifically, blo
 
 Every sub-directory contains a README that explains how the specific Python scripts work.
 
-## Keys file generation 
+## Notes
+The `requirements.txt` file should list all Python libraries that our scripts
+depend on, you have to install them before running any script inside this repo by running:
+
+```
+pip install -r requirements.txt
+```
+
+### Keys file generation 
 In order to create the whole list of private and public keys for the subgroup we've chosen, plus the seven cosets we have chosen to investigate, run the *KeysFileGeneration.py* script. 
 <br><br>
 
