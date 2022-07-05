@@ -1,4 +1,4 @@
-# This script computes the Bitcoin segwit addresses for our starting set and checks if they ever appeared on
+# This script computes the Litecoin segwit addresses for our starting set and checks if they ever appeared on
 # the blockchain. The whole list of existing addresses must be loaded in advance on a SQL databaseimport datetime
 
 import mysql.connector
