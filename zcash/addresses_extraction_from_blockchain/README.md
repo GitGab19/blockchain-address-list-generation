@@ -1,4 +1,4 @@
-# Zcash Addresses list
+# Zcash Addresses list <img align="center" src="https://cryptologos.cc/logos/zcash-zec-logo.png?v=022" width="40" height="40">
 In order to use this Python script, you must have a Zcash Full Node running on your local machine.
 If you don't already have one, you can find full documentation and setup guides at this link: https://zcash.readthedocs.io/en/latest/rtd_pages/zcashd.html
 <br><br>

@@ -1,4 +1,4 @@
-# Litecoin
+# Litecoin <img align="center" src="https://cryptologos.cc/logos/litecoin-ltc-logo.png?v=022" width="40" height="40">
 This folder contains the scripts needed to generate and check the presence of the generated address (starting from the private/public key sets) in the list of addresses exctracted from the Litecoin blockchain.
 <br>
 - In order to generate the *compressed* addresses, run the *CompLiteGen.py* script

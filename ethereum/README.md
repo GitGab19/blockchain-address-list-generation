@@ -1,4 +1,4 @@
-# Ethereum
+# Ethereum <img align="center" src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022" width="40" height="40">
 This folder contains the scripts needed to generate and check the presence of the generated address (starting from the private/public key sets) in the list of addresses exctracted from the Ethereum blockchain.
 <br>
 - In order to generate the addresses, run the *EthGen.py* script
