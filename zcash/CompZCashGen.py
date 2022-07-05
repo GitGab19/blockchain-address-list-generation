@@ -44,14 +44,15 @@ while line:
     pub = AddressGeneration.ZCashAddressComputation(public_key[0])
 
     mycursor = mydb.cursor()
+    # search in the database: SELECT * FROM tableName WHERE attributeName =
     sql = "SELECT * FROM address_zcash WHERE address='" + pub + "';"
 
     mycursor.execute(sql)
     myresult = mycursor.fetchone()
 
     if myresult:
-        cuerpo = 'Private key= {pkwif}  \r\n Address = {address} \r\n -----------------------'
-        Message = cuerpo.format(pkwif=private_key, address=pub)
+        body = 'Private key= {pkwif}  \r\n Address = {address} \r\n -----------------------'
+        Message = body.format(pkwif=private_key, address=pub)
         with open("Luck.txt", "a") as f:
             print(Message, file=f)
     u = u + 1
