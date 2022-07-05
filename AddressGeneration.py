@@ -8,6 +8,7 @@ import hashlib
 from base58 import b58encode
 import bech32
 from cashaddress import convert
+import datetime
 
 
 # Computation of the private keys in the subgroup (see the paper for more details)
@@ -29,6 +30,7 @@ def PrivateKeyComputation(p1: int, p2: int, p3: int, base: int, n: int):
 
 # Computation of the private keys in the seven cosets (see the paper for more details)
 def CosetPrivateKeyComputation(p1: int, p2: int, p3: int, base: int, n: int):
+    print("Coset PrivateKey Computation started at", datetime.datetime.now())
     prod = p1 * p2 * p3
     h = (2 ** 6) * 3 * 149 * 631
     order = h * prod
@@ -49,7 +51,7 @@ def CosetPrivateKeyComputation(p1: int, p2: int, p3: int, base: int, n: int):
         for i in range(n):
             value = (g * int(privateSet[i], 16)) % (order + 1)
             privateSet[(j+1)*h+i] = hex(value)
-
+    print("Coset PrivateKey Computation finished at", datetime.datetime.now())
     return privateSet
 
 
@@ -73,6 +75,7 @@ def KeysFile(n: int, privateSet):
 # Copy all the private keys + corresponding public keys (subgroup + seven cosets) in a .txt file
 # The file will be around 144M rows
 def CosetKeysFile(n: int, privateSet):
+    print("Writing on txt file started at", datetime.datetime.now())
     f = open("secp256k1_keys.txt", "r+")
     f.seek(0)
     f.write('\t\tPrivateKey  \t\t\t\t\t\t\t\t\t\t  PublicKey-x \t\t\t\t\t\t\t\t\t\t   PublicKey-y  \n')
@@ -86,6 +89,7 @@ def CosetKeysFile(n: int, privateSet):
 
     f.truncate()
     f.close()
+    print("Writing on txt file finished at", datetime.datetime.now())
 
 
 # Public key encoding (uncompressed)
@@ -303,10 +307,3 @@ def ZCashAddressComputation(publicKey):
     hash_final_bytes = unhexlify(hash_final)
     address = b58encode(hash_final_bytes).decode("utf-8")
     return address
-
-
-
-
-
-
-
