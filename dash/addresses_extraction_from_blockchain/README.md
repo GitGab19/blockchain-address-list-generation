@@ -1,4 +1,4 @@
-# Dash Addresses List
+# Dash Addresses List <img align="center" src="https://cryptologos.cc/logos/dash-dash-logo.png?v=022" width="40" height="40">
 In order to use this Python script, you must have a Dash Full Node (Masternode) running on your local machine.
 If you don't already have one, you can find full documentation and setup guides at this link: https://docs.dash.org/en/stable/masternodes/setup.html#install-dash-core
 <br><br>

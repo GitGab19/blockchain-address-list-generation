@@ -1,2 +1,2 @@
-# Bitcoin Addresses List
+# Bitcoin Addresses List <img align="center" src="https://user-images.githubusercontent.com/62447440/177342647-6a567716-55f6-477b-aac8-6ea6c9917ca1.png" width="40" height="40">
 In order to retrieve the updated list of addresses ever appeared on the Bitcoin blockchain, you can find it at the following link: http://alladdresses.loyce.club/?C=M;O=D

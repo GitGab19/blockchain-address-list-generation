@@ -1,2 +1,2 @@
-# Ethereum Addresses List(s)
+# Ethereum Addresses List(s) <img align="center" src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022" width="40" height="40">
 The eth_addresses.py script will generate 12 *txt* files (named "eth_addresses_part#.txt") containing one address per row. If you don't change anything of the script, it will get addresses from block 0 to 14830178. **In order to get also the latest block (and so the latest addresses) you can simply change the last parameter of the thread at line 65 before running it.**
