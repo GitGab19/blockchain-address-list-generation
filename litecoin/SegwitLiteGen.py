@@ -16,7 +16,7 @@ mydb = mysql.connector.connect(
     host="localhost",
     user="root",
     password="",
-    database="litecoin"
+    database="litecoin" # database name
 )
 
 # Parameters
