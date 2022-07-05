@@ -2,12 +2,12 @@
 # the blockchain. The whole list of existing addresses must be loaded in advance on a SQL database
 
 import datetime
-import bitcoin
 import mysql.connector
-import sys
-sys.path.append('../')
+import sys, os
+script_dir = os.path.dirname( __file__ )
+mymodule_dir = os.path.join( script_dir, '..' )
+sys.path.append( mymodule_dir )
 import AddressGeneration
-
 
 t0 = datetime.datetime.now()
 
