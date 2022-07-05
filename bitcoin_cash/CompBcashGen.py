@@ -43,6 +43,7 @@ while line:
     pub = AddressGeneration.BCashAddressComputation(public_key[0])
 
     mycursor = mydb.cursor()
+    # search in the database: SELECT * FROM tableName WHERE attributeName =
     sql = "SELECT * FROM address_bch WHERE address='" + pub + "';"
 
     mycursor.execute(sql)
