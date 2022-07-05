@@ -16,7 +16,7 @@ Repo is divided into different blockchains we've studied; more specifically, blo
 Every sub-directory contains a README that explains how the specific Python scripts work.
 
 ## Keys file generation 
-In order to create the whole list of private and public keys for the subgroup we've chosen, plus the seven cosets we have chosen to invistigate, run the *KeysFileGeneration.py* script. 
+In order to create the whole list of private and public keys for the subgroup we've chosen, plus the seven cosets we have chosen to investigate, run the *KeysFileGeneration.py* script. 
 <br><br>
 
 ## Conclusion
