@@ -24,7 +24,7 @@ mydb = mysql.connector.connect(
 u = 0
 env = 0
 
-file_name = '../cosetSecp256k1Keys.txt'
+file_name = 'secp256k1Keys.txt'
 
 fh = open(file_name, 'rt')
 line0 = fh.readline()
