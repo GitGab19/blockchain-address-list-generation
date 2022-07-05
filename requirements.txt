@@ -1,7 +1,5 @@
 mysql-connector
 datetime
 ecdsa
-binascii
-hashlib
 bech32
 cashaddress
