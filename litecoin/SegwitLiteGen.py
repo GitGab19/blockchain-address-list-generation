@@ -3,10 +3,11 @@
 
 import datetime
 import mysql.connector
-import sys
-sys.path.append('../')
+import sys, os
+script_dir = os.path.dirname( __file__ )
+mymodule_dir = os.path.join( script_dir, '..' )
+sys.path.append( mymodule_dir )
 import AddressGeneration
-
 
 t0 = datetime.datetime.now()
 
